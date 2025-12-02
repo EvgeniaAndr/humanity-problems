@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальные проблемы человечества | География</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Основной контейнер -->
+    <div class="container">
+        <!-- Фон с космосом -->
+        <div class="space-background" id="space-bg"></div>
+        
+        <!-- Canvas для 3D Земли -->
+        <div class="earth-container">
+            <canvas id="earth-canvas"></canvas>
+            <div class="earth-overlay">
+                <h1 class="title">ГЛОБАЛЬНЫЕ ПРОБЛЕМЫ ЧЕЛОВЕЧЕСТВА</h1>
+                <p class="subtitle">Исследуйте основные вызовы, стоящие перед нашей планетой</p>
+            </div>
+        </div>
+        
+        <!-- Кнопки навигации -->
+        <div class="navigation">
+            <div class="nav-buttons">
+                <a href="problems.html" class="nav-btn" id="problems-btn">
+                    <div class="btn-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <span class="btn-text">Проблемы</span>
+                    <div class="btn-hint">Изменение климата, загрязнение...</div>
+                </a>
+                <a href="solutions.html" class="nav-btn" id="solutions-btn">
+                    <div class="btn-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <span class="btn-text">Решения</span>
+                    <div class="btn-hint">Инновационные подходы</div>
+                </a>
+                <a href="statistics.html" class="nav-btn" id="statistics-btn">
+                    <div class="btn-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span class="btn-text">Статистика</span>
+                    <div class="btn-hint">Цифры и факты</div>
+                </a>
+                <a href="#about" class="nav-btn" id="about-btn">
+                    <div class="btn-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <span class="btn-text">О проекте</span>
+                    <div class="btn-hint">Информация</div>
+                </a>
+            </div>
+            
+            <!-- Индикатор взаимодействия -->
+            <div class="interaction-hint">
+                <i class="fas fa-mouse-pointer"></i>
+                <p>Крутите и масштабируйте Землю с помощью мыши</p>
+            </div>
+        </div>
+        
+        <!-- Факты о Земле (теперь как плавающий элемент) -->
+        <div class="floating-facts">
+            <div class="fact-card">
+                <div class="fact-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="fact-content">
+                    <p id="fact-text">Каждую минуту исчезает 20 гектаров леса</p>
+                    <button id="next-fact" class="fact-next-btn">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Аудио элементы (скрытые) -->
+        <audio id="space-sound" loop>
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-space-ambience-299.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="click-sound">
+            <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Подключение библиотек -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <!-- Подключение наших скриптов -->
+    <script src="earth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

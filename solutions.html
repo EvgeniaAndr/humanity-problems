@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальные проблемы человечества - Решения</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="solutions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Фон -->
+    <div class="content-background"></div>
+    
+    <!-- Шапка -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-globe-americas"></i>
+            Глобальные проблемы
+        </a>
+        <nav class="main-nav">
+            <a href="problems.html" class="nav-link">
+                <i class="fas fa-exclamation-triangle"></i>
+                Проблемы
+            </a>
+            <a href="solutions.html" class="nav-link active">
+                <i class="fas fa-lightbulb"></i>
+                Решения
+            </a>
+            <a href="statistics.html" class="nav-link">
+                <i class="fas fa-chart-line"></i>
+                Статистика
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Кнопка назад -->
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        На главную
+    </a>
+    
+    <!-- Компактная навигация справа -->
+    <nav class="compact-nav">
+        <a href="#technological" class="compact-nav-item active" data-tooltip="Технологические решения">
+            <i class="fas fa-robot"></i>
+        </a>
+        <a href="#policy" class="compact-nav-item" data-tooltip="Политические решения">
+            <i class="fas fa-landmark"></i>
+        </a>
+        <a href="#social" class="compact-nav-item" data-tooltip="Социальные решения">
+            <i class="fas fa-hands-helping"></i>
+        </a>
+        <a href="#economic" class="compact-nav-item" data-tooltip="Экономические решения">
+            <i class="fas fa-chart-line"></i>
+        </a>
+    </nav>
+    
+    <!-- Индикатор прокрутки -->
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <div class="scroll-dot"></div>
+    </div>
+    
+    <!-- Основной контент -->
+    <main class="page-content">
+        <!-- Раздел 1: ТЕХНОЛОГИЧЕСКИЕ РЕШЕНИЯ -->
+        <section id="technological" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h1 class="section-main-title">ТЕХНОЛОГИЧЕСКИЕ РЕШЕНИЯ</h1>
+                <p class="section-subtitle">Инновационные технологии для преодоления глобальных вызовов</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Современные технологии предлагают эффективные решения для смягчения последствий глобальных проблем. От возобновляемой энергетики до искусственного интеллекта - технологии меняют подход к устойчивому развитию.</p>
+            </div>
+            
+            <!-- Категории технологических решений -->
+            <div class="solutions-categories">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Чистая энергетика</h3>
+                    <p>Переход к возобновляемым источникам энергии</p>
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <span class="value">29%</span>
+                            <span class="label">рост ВИЭ</span>
+                        </div>
+                        <div class="category-stat">
+                            <span class="value">80+</span>
+                            <span class="label">стран</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Циклическая экономика</h3>
+                    <p>Замкнутые циклы производства и потребления</p>
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <span class="value">9%</span>
+                            <span class="label">материалов</span>
+                        </div>
+                        <div class="category-stat">
+                            <span class="value">$4.5 трлн</span>
+                            <span class="label">потенциал</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Агротехнологии</h3>
+                    <p>Умное сельское хозяйство и продовольствие</p>
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <span class="value">70%</span>
+                            <span class="label">эффективность</span>
+                        </div>
+                        <div class="category-stat">
+                            <span class="value">-40%</span>
+                            <span class="label">вода</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Решение 1: Возобновляемая энергетика -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Возобновляемая энергетика</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-technology">Технология</span>
+                                <span class="solution-tag tag-efficiency">Эффективность</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Переход от ископаемого топлива к солнечной, ветровой, гидро- и геотермальной энергии. Технологии становятся дешевле и эффективнее с каждым годом.</p>
+                        <p>Современные солнечные панели имеют КПД более 22%, а стоимость ветровой энергии снизилась на 70% за последнее десятилетие.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Сокращение выбросов CO₂ на 90% по сравнению с углем</li>
+                            <li>Создание новых рабочих мест в "зелёной" экономике</li>
+                            <li>Энергетическая независимость стран</li>
+                            <li>Стабильные цены на энергию в долгосрочной перспективе</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Успешные примеры</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>Дания</h5>
+                                <p>Более 50% энергии от ветра, цель - 100% к 2030</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Исландия</h5>
+                                <p>100% электроэнергии от геотермальных и ГЭС</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Калифорния</h5>
+                                <p>33% энергии от ВИЭ, цель - 60% к 2030</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Глобальный прогресс</span>
+                            <span class="progress-value">29%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 29%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-more">
+                        <button class="more-btn">
+                            <i class="fas fa-book"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Решение 2: Умные сети и хранение энергии -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Умные энергетические сети</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-technology">Технология</span>
+                                <span class="solution-tag tag-efficiency">Инфраструктура</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Интеллектуальные системы распределения энергии, которые балансируют спрос и предложение в реальном времени. Технологии хранения энергии решают проблему нестабильности ВИЭ.</p>
+                        <p>Современные литий-ионные батареи и технологии водородного хранения позволяют накапливать избыточную энергию для использования в периоды пикового спроса.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Снижение потерь при передаче энергии до 15%</li>
+                            <li>Повышение надёжности энергоснабжения</li>
+                            <li>Интеграция распределённой генерации</li>
+                            <li>Оптимизация потребления энергии</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Успешные примеры</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>Австралия</h5>
+                                <p>Крупнейшая в мире литий-ионная батарея Tesla</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Германия</h5>
+                                <p>Умные сети интегрируют 40% ВИЭ в систему</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Япония</h5>
+                                <p>Водородная энергетика для хранения избытков</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Глобальный прогресс</span>
+                            <span class="progress-value">18%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 18%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-more">
+                        <button class="more-btn">
+                            <i class="fas fa-book"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Решение 3: Умное сельское хозяйство -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Точное земледелие</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-technology">Агротех</span>
+                                <span class="solution-tag tag-efficiency">Эффективность</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Использование IoT-датчиков, дронов и искусственного интеллекта для оптимизации использования воды, удобрений и пестицидов. Технологии позволяют увеличить урожайность при снижении ресурсозатрат.</p>
+                        <p>Системы мониторинга в реальном времени анализируют состояние почвы и растений, обеспечивая точное внесение необходимых веществ.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Сокращение использования воды на 40-60%</li>
+                            <li>Уменьшение применения пестицидов на 30%</li>
+                            <li>Увеличение урожайности на 20-30%</li>
+                            <li>Снижение эрозии почвы и загрязнения</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Успешные примеры</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>Нидерланды</h5>
+                                <p>Лидер в тепличном земледелии с минимальным расходом воды</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Израиль</h5>
+                                <p>Капельное орошение повысило эффективность на 70%</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>США</h5>
+                                <p>Использование дронов для мониторинга полей</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Глобальный прогресс</span>
+                            <span class="progress-value">22%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 22%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-more">
+                        <button class="more-btn">
+                            <i class="fas fa-book"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Решение 4: Технологии улавливания CO₂ -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Улавливание и хранение углерода</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-technology">Климат</span>
+                                <span class="solution-tag tag-efficiency">Экология</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Технологии CCS (Carbon Capture and Storage) позволяют улавливать CO₂ на промышленных объектах и электростанциях, транспортировать и безопасно хранить его под землёй.</p>
+                        <p>CCU (Carbon Capture and Utilization) технологии превращают углекислый газ в полезные продукты: строительные материалы, топливо, химикаты.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Снижение выбросов от промышленности на 90%</li>
+                            <li>Возможность достижения углеродной нейтральности</li>
+                            <li>Создание новых рынков для продуктов из CO₂</li>
+                            <li>Поддержка перехода к зелёной экономике</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Успешные примеры</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>Норвегия</h5>
+                                <p>Проект Sleipner - хранение CO₂ под Северным морем</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Канада</h5>
+                                <p>Boundary Dam - первая угольная станция с CCS</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Швейцария</h5>
+                                <p>Завод Climeworks улавливает CO₂ из воздуха</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Глобальный прогресс</span>
+                            <span class="progress-value">12%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 12%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-more">
+                        <button class="more-btn">
+                            <i class="fas fa-book"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Технологии как драйвер изменений</h3>
+                <p>Технологические решения демонстрируют огромный потенциал для решения глобальных проблем. Ключевым фактором успеха является масштабирование успешных пилотных проектов, снижение стоимости технологий и создание благоприятной регуляторной среды для их внедрения.</p>
+            </div>
+        </section>
+        
+        <!-- Раздел 2: ПОЛИТИЧЕСКИЕ РЕШЕНИЯ -->
+        <section id="policy" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h2 class="section-main-title">ПОЛИТИЧЕСКИЕ РЕШЕНИЯ</h2>
+                <p class="section-subtitle">Международные соглашения и государственная политика для глобальных вызовов</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Эффективная политика и международное сотрудничество необходимы для координации усилий по решению глобальных проблем. От климатических соглашений до торговой политики - правительства играют ключевую роль.</p>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Решение 1: Парижское соглашение -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Международные климатические соглашения</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-policy">Международное</span>
+                                <span class="solution-tag tag-efficiency">Регулирование</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Парижское соглашение 2015 года установило рамки для глобальных действий по борьбе с изменением климата. Цель - ограничить потепление значительно ниже 2°C, стремясь к 1.5°C.</p>
+                        <p>Страны представляют НВУ (национально определяемые вклады) и отчитываются о прогрессе. Механизмы включают углеродные рынки, финансирование и передачу технологий.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Согласованные глобальные цели по сокращению выбросов</li>
+                            <li>Механизмы прозрачности и отчетности</li>
+                            <li>Финансовая поддержка развивающихся стран</li>
+                            <li>Стимулы для технологического сотрудничества</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Охват стран</span>
+                            <span class="progress-value">197</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 98%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-more">
+                        <button class="more-btn">
+                            <i class="fas fa-book"></i>
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Решение 2: Углеродное налогообложение -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Углеродное налогообложение и торговля квотами</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-policy">Экономика</span>
+                                <span class="solution-tag tag-efficiency">Стимулы</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Системы ценообразования на углерод создают экономические стимулы для сокращения выбросов. Углеродные налоги устанавливают фиксированную цену за тонну CO₂, а системы торговли квотами создают рыночный механизм.</p>
+                        <p>Вырученные средства могут реинвестироваться в зелёные технологии, социальные программы или возвращаться гражданам в виде "углеродных дивидендов".</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Экономические стимулы для снижения выбросов</li>
+                            <li>Генерация доходов для зелёных инвестиций</li>
+                            <li>Стимулирование технологических инноваций</li>
+                            <li>Гибкость для бизнеса в выборе стратегии</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Реализация</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>ЕС ETS</h5>
+                                <p>Крупнейшая система торговли квотами, покрывает 45% выбросов ЕС</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Канада</h5>
+                                <p>Федеральный углеродный налог с дивидендами населению</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Китай</h5>
+                                <p>Национальная система торговли квотами с 2021 года</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-progress">
+                        <div class="progress-info">
+                            <span class="progress-label">Глобальный охват</span>
+                            <span class="progress-value">22%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 22%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Политика как основа системных изменений</h3>
+                <p>Политические решения создают необходимые рамки и стимулы для перехода к устойчивому развитию. Эффективная политика сочетает регулирование, экономические инструменты и международное сотрудничество для достижения глобальных целей.</p>
+            </div>
+        </section>
+        
+        <!-- Раздел 3: СОЦИАЛЬНЫЕ РЕШЕНИЯ -->
+        <section id="social" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <h2 class="section-main-title">СОЦИАЛЬНЫЕ РЕШЕНИЯ</h2>
+                <p class="section-subtitle">Образование, осознанность и общественные инициативы для устойчивого будущего</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Изменение поведения и ценностей общества является ключевым фактором решения глобальных проблем. Образование, информирование и общественные движения создают основу для устойчивых изменений.</p>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Решение 1: Образование для устойчивого развития -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Образование для устойчивого развития</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-social">Образование</span>
+                                <span class="solution-tag tag-efficiency">Просвещение</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Интеграция принципов устойчивого развития в образовательные программы всех уровней. Формирование экологического сознания, критического мышления и ответственного потребления с раннего возраста.</p>
+                        <p>Программы включают изучение глобальных проблем, развитие навыков решения сложных задач и обучение устойчивому образу жизни.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Формирование ответственного поколения</li>
+                            <li>Развитие системного мышления</li>
+                            <li>Подготовка кадров для зелёной экономики</li>
+                            <li>Создание культуры устойчивости</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="solution-examples">
+                        <h4><i class="fas fa-globe-americas"></i> Реализация</h4>
+                        <div class="examples-grid">
+                            <div class="example-item">
+                                <h5>Финляндия</h5>
+                                <p>Образование в области устойчивого развития с детского сада</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Япония</h5>
+                                <p>Программы экологического воспитания в школах</p>
+                            </div>
+                            <div class="example-item">
+                                <h5>Южная Корея</h5>
+                                <p>Зелёные школы с нулевым выбросом углерода</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Решение 2: Гражданская наука -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Гражданская наука и общественный мониторинг</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-social">Сообщество</span>
+                                <span class="solution-tag tag-technology">Данные</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Вовлечение граждан в сбор данных и мониторинг экологических показателей. Мобильные приложения и платформы позволяют каждому участвовать в научных исследованиях и защите окружающей среды.</p>
+                        <p>Граждане помогают отслеживать качество воздуха и воды, биоразнообразие, незаконные вырубки и другие экологические проблемы.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Масштабирование научных исследований</li>
+                            <li>Повышение экологической осведомлённости</li>
+                            <li>Общественный контроль за экологическими нарушениями</li>
+                            <li>Демократизация науки и данных</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Общество как двигатель изменений</h3>
+                <p>Социальные решения демонстрируют, что изменения начинаются с людей. Образование, информирование и общественная активность создают критическую массу для перехода к устойчивому образу жизни и требуют поддержки со стороны всех секторов общества.</p>
+            </div>
+        </section>
+        
+        <!-- Раздел 4: ЭКОНОМИЧЕСКИЕ РЕШЕНИЯ -->
+        <section id="economic" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h2 class="section-main-title">ЭКОНОМИЧЕСКИЕ РЕШЕНИЯ</h2>
+                <p class="section-subtitle">Новые экономические модели и финансовые механизмы для устойчивого развития</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Трансформация экономических систем необходима для решения глобальных проблем. От циркулярной экономики до зелёных финансов - новые модели создают возможности для инклюзивного и устойчивого роста.</p>
+            </div>
+            
+            <div class="solutions-container">
+                <!-- Решение 1: Циркулярная экономика -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Циркулярная экономика</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-efficiency">Экономика</span>
+                                <span class="solution-tag tag-technology">Инновации</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Переход от линейной модели "взял-произвел-выбросил" к циклической системе, где отходы становятся ресурсами. Принципы включают дизайн для долговечности, ремонт, повторное использование и переработку.</p>
+                        <p>Модель создаёт экономические выгоды за счёт снижения затрат на сырьё, создания новых бизнес-моделей и уменьшения экологического ущерба.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Сокращение использования первичных ресурсов на 28% к 2030</li>
+                            <li>Создание 700,000 новых рабочих мест в ЕС</li>
+                            <li>Снижение выбросов CO₂ на 48% к 2030</li>
+                            <li>Годовой экономический выигрыш €1.8 трлн к 2030</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Решение 2: Зелёные финансы -->
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="solution-title">
+                            <h3>Зелёные финансы и ESG-инвестиции</h3>
+                            <div class="solution-tags">
+                                <span class="solution-tag tag-efficiency">Финансы</span>
+                                <span class="solution-tag tag-policy">Инвестиции</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-description">
+                        <p>Направление финансовых потоков в проекты и компании, соответствующие критериям ESG (экологическое, социальное, управление). Зелёные облигации, устойчивое кредитование и ответственное инвестирование.</p>
+                        <p>Рынок зелёных облигаций вырос с нуля до более чем $1 трлн, демонстрируя растущий спрос на устойчивые инвестиции.</p>
+                    </div>
+                    
+                    <div class="solution-benefits">
+                        <h4><i class="fas fa-check-circle"></i> Ключевые преимущества</h4>
+                        <ul class="benefits-list">
+                            <li>Мобилизация капитала для устойчивых проектов</li>
+                            <li>Снижение финансовых рисков, связанных с климатом</li>
+                            <li>Стимулирование корпоративной ответственности</li>
+                            <li>Создание прозрачных стандартов отчетности</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Экономика устойчивого развития</h3>
+                <p>Экономические решения показывают, что устойчивость и прибыльность не противоречат друг другу. Новые экономические модели создают возможности для инноваций, роста занятости и долгосрочной устойчивости, демонстрируя, что зелёная экономика - это экономика будущего.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="solutions.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальные проблемы человечества - Статистика</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="statistics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Фон -->
+    <div class="content-background"></div>
+    
+    <!-- Шапка -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-globe-americas"></i>
+            Глобальные проблемы
+        </a>
+        <nav class="main-nav">
+            <a href="problems.html" class="nav-link">
+                <i class="fas fa-exclamation-triangle"></i>
+                Проблемы
+            </a>
+            <a href="solutions.html" class="nav-link">
+                <i class="fas fa-lightbulb"></i>
+                Решения
+            </a>
+            <a href="statistics.html" class="nav-link active">
+                <i class="fas fa-chart-line"></i>
+                Статистика
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Кнопка назад -->
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        На главную
+    </a>
+    
+    <!-- Компактная навигация справа -->
+    <nav class="compact-nav">
+        <a href="#global-stats" class="compact-nav-item active" data-tooltip="Глобальная статистика">
+            <i class="fas fa-globe"></i>
+        </a>
+        <a href="#charts" class="compact-nav-item" data-tooltip="Графики">
+            <i class="fas fa-chart-bar"></i>
+        </a>
+        <a href="#timeline" class="compact-nav-item" data-tooltip="Таймлайн">
+            <i class="fas fa-history"></i>
+        </a>
+        <a href="#data" class="compact-nav-item" data-tooltip="Таблицы">
+            <i class="fas fa-table"></i>
+        </a>
+    </nav>
+    
+    <!-- Индикатор прокрутки -->
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <div class="scroll-dot"></div>
+    </div>
+    
+    <!-- Основной контент -->
+    <main class="page-content">
+        <!-- Раздел 1: ГЛОБАЛЬНАЯ СТАТИСТИКА -->
+        <section id="global-stats" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h1 class="section-main-title">СТАТИСТИКА ГЛОБАЛЬНЫХ ПРОБЛЕМ</h1>
+                <p class="section-subtitle">Цифры, графики и визуализация данных о состоянии планеты</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Статистические данные позволяют оценить масштаб глобальных проблем, отследить динамику изменений и определить приоритеты для действий. Интерактивная визуализация помогает лучше понять сложные процессы.</p>
+            </div>
+            
+            <!-- Статистические панели -->
+            <div class="stats-panels">
+                <div class="stat-panel">
+                    <div class="stat-panel-header">
+                        <div class="stat-panel-icon">
+                            <i class="fas fa-temperature-high"></i>
+                        </div>
+                        <div class="stat-panel-title">
+                            <h3>Изменение климата</h3>
+                            <p>Средняя температура Земли</p>
+                        </div>
+                    </div>
+                    <div class="stat-panel-value">+1.1°C</div>
+                    <div class="stat-panel-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>Рост с 1880 года</span>
+                    </div>
+                </div>
+                
+                <div class="stat-panel">
+                    <div class="stat-panel-header">
+                        <div class="stat-panel-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="stat-panel-title">
+                            <h3>Потеря лесов</h3>
+                            <p>Ежегодная вырубка</p>
+                        </div>
+                    </div>
+                    <div class="stat-panel-value">10 млн га</div>
+                    <div class="stat-panel-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>Каждый год</span>
+                    </div>
+                </div>
+                
+                <div class="stat-panel">
+                    <div class="stat-panel-header">
+                        <div class="stat-panel-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-panel-title">
+                            <h3>Население</h3>
+                            <p>Численность населения Земли</p>
+                        </div>
+                    </div>
+                    <div class="stat-panel-value">8 млрд</div>
+                    <div class="stat-panel-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>+1 млрд за 12 лет</span>
+                    </div>
+                </div>
+                
+                <div class="stat-panel">
+                    <div class="stat-panel-header">
+                        <div class="stat-panel-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="stat-panel-title">
+                            <h3>Дефицит воды</h3>
+                            <p>Люди без доступа к чистой воде</p>
+                        </div>
+                    </div>
+                    <div class="stat-panel-value">2.2 млрд</div>
+                    <div class="stat-panel-trend">
+                        <i class="fas fa-arrow-up trend-up"></i>
+                        <span>29% населения</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+      <!-- Раздел 3: ГРАФИКИ И ДИАГРАММЫ -->
+<section id="charts" class="page-section">
+    <div class="section-header">
+        <div class="section-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <h2 class="section-main-title">ГРАФИКИ И ДИАГРАММЫ</h2>
+        <p class="section-subtitle">Динамика изменений и сравнительный анализ данных</p>
+    </div>
+    
+    <div class="charts-grid">
+        <!-- График 1: Температура -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <div class="chart-icon">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <div class="chart-title">
+                    <h3>Изменение глобальной температуры</h3>
+                    <p>Отклонение от средней температуры 1951-1980 годов</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="vertical-chart">
+                    <div class="vertical-bar temperature-color" data-label="1880" data-value="-0.16°C" style="height: 10%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="1900" data-value="-0.08°C" style="height: 15%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="1920" data-value="-0.25°C" style="height: 8%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="1940" data-value="0.12°C" style="height: 25%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="1960" data-value="0.03°C" style="height: 18%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="1980" data-value="0.26°C" style="height: 35%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="2000" data-value="0.42°C" style="height: 45%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="2020" data-value="1.02°C" style="height: 75%;"></div>
+                    <div class="vertical-bar temperature-color" data-label="2023" data-value="1.17°C" style="height: 82%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color temperature-color"></div>
+                        <span>Температура (°C)</span>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+        
+        <!-- График 2: Вырубка лесов -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <div class="chart-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <div class="chart-title">
+                    <h3>Вырубка лесов по регионам</h3>
+                    <p>Потеря лесного покрова в 2020 году</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="horizontal-chart">
+                    <div class="horizontal-bar forest-color" data-label="Бразилия" data-value="1.7 млн га" style="height: 100%;"></div>
+                    <div class="horizontal-bar forest-color" data-label="ДР Конго" data-value="490 тыс га" style="height: 29%;"></div>
+                    <div class="horizontal-bar forest-color" data-label="Индонезия" data-value="324 тыс га" style="height: 19%;"></div>
+                    <div class="horizontal-bar forest-color" data-label="Боливия" data-value="276 тыс га" style="height: 16%;"></div>
+                    <div class="horizontal-bar forest-color" data-label="Перу" data-value="190 тыс га" style="height: 11%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color forest-color"></div>
+                        <span>Потеря лесов</span>
+                    </div>
+                </div>
+            </div>
+            
+       
+        </div>
+        
+        <!-- График 3: Выбросы CO₂ -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <div class="chart-icon">
+                    <i class="fas fa-industry"></i>
+                </div>
+                <div class="chart-title">
+                    <h3>Выбросы CO₂ по странам</h3>
+                    <p>Годовые выбросы углекислого газа (2022)</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="horizontal-chart">
+                    <div class="horizontal-bar co2-color" data-label="Китай" data-value="11.5 млрд т" style="height: 100%;"></div>
+                    <div class="horizontal-bar co2-color" data-label="США" data-value="5.0 млрд т" style="height: 43%;"></div>
+                    <div class="horizontal-bar co2-color" data-label="Индия" data-value="2.7 млрд т" style="height: 23%;"></div>
+                    <div class="horizontal-bar co2-color" data-label="Россия" data-value="1.8 млрд т" style="height: 16%;"></div>
+                    <div class="horizontal-bar co2-color" data-label="Япония" data-value="1.1 млрд т" style="height: 10%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color co2-color"></div>
+                        <span>Выбросы CO₂</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        <!-- График 4: Население -->
+        <div class="chart-card">
+            <div class="chart-header">
+                <div class="chart-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="chart-title">
+                    <h3>Рост населения мира</h3>
+                    <p>Динамика численности населения</p>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <div class="vertical-chart">
+                    <div class="vertical-bar population-color" data-label="1800" data-value="1.0 млрд" style="height: 10%;"></div>
+                    <div class="vertical-bar population-color" data-label="1900" data-value="1.65 млрд" style="height: 16%;"></div>
+                    <div class="vertical-bar population-color" data-label="1950" data-value="2.5 млрд" style="height: 25%;"></div>
+                    <div class="vertical-bar population-color" data-label="2000" data-value="6.1 млрд" style="height: 61%;"></div>
+                    <div class="vertical-bar population-color" data-label="2023" data-value="8.0 млрд" style="height: 80%;"></div>
+                    <div class="vertical-bar population-color" data-label="2050" data-value="9.7 млрд" style="height: 97%;"></div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color population-color"></div>
+                        <span>Население (млрд)</span>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+</section>
+        
+        <!-- Раздел 4: ТАЙМЛАЙН ИСТОРИЧЕСКИХ ИЗМЕНЕНИЙ -->
+        <section id="timeline" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h2 class="section-main-title">ТАЙМЛАЙН ИЗМЕНЕНИЙ</h2>
+                <p class="section-subtitle">Хронология ключевых событий и тенденций в области глобальных проблем</p>
+            </div>
+            
+            <div class="timeline-section">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1850 - Начало промышленной революции</h4>
+                            <p>Массовый переход на ископаемое топливо приводит к росту выбросов CO₂. Концентрация CO₂ в атмосфере: 280 ppm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1950 - "Великое ускорение"</h4>
+                            <p>Быстрый рост населения, потребления ресурсов и промышленного производства. Население: 2.5 млрд.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1972 - Пределы роста</h4>
+                            <p>Доклад Римского клуба предупреждает о пределах роста на конечной планете. Начинается экологическое движение.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1987 - Концепция устойчивого развития</h4>
+                            <p>Доклад Брундтланд определяет устойчивое развитие как развитие, удовлетворяющее потребности настоящего без ущерба для будущих поколений.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1992 - Саммит Земли в Рио</h4>
+                            <p>Принятие Рамочной конвенции ООН об изменении климата. Концентрация CO₂: 356 ppm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>1997 - Киотский протокол</h4>
+                            <p>Первое международное соглашение по сокращению выбросов парниковых газов. Население: 5.9 млрд.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2015 - Парижское соглашение</h4>
+                            <p>195 стран соглашаются ограничить потепление значительно ниже 2°C. Концентрация CO₂: 400 ppm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2020 - COVID-19 пандемия</h4>
+                            <p>Временное снижение выбросов на 7%, но затем быстрый восстановительный рост. Население: 7.8 млрд.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2023 - Современное состояние</h4>
+                            <p>Концентрация CO₂: 420 ppm. Потепление: +1.1°C. Население: 8 млрд. Усиление экстремальных погодных явлений.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h4>2030 - Цели устойчивого развития</h4>
+                            <p>Срок достижения ЦУР ООН. Прогноз: население 8.5 млрд, потепление +1.5°C при текущих темпах.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Раздел 5: ТАБЛИЦЫ ДАННЫХ -->
+        <section id="data" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-table"></i>
+                </div>
+                <h2 class="section-main-title">ТАБЛИЦЫ ДАННЫХ</h2>
+                <p class="section-subtitle">Сравнительные данные по странам и регионам</p>
+            </div>
+            
+            <div class="data-table-section">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Страна/Регион</th>
+                            <th>Выбросы CO₂ (т/чел)</th>
+                            <th>Потеря лесов (2020)</th>
+                            <th>Доступ к воде (%)</th>
+                            <th>Экологический след</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Катар</td>
+                            <td class="highlight">37.3</td>
+                            <td>0</td>
+                            <td>99%</td>
+                            <td>14.7 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>США</td>
+                            <td class="highlight">15.5</td>
+                            <td>1.7 млн га</td>
+                            <td>99%</td>
+                            <td>8.0 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Россия</td>
+                            <td class="highlight">11.4</td>
+                            <td>6.5 млн га</td>
+                            <td>96%</td>
+                            <td>5.6 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Германия</td>
+                            <td>8.9</td>
+                            <td>0.1 млн га</td>
+                            <td>100%</td>
+                            <td>4.6 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Китай</td>
+                            <td>7.4</td>
+                            <td>0.3 млн га</td>
+                            <td>87%</td>
+                            <td>3.7 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Бразилия</td>
+                            <td>2.3</td>
+                            <td class="highlight">1.7 млн га</td>
+                            <td>88%</td>
+                            <td>2.8 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Индия</td>
+                            <td>1.8</td>
+                            <td>0.1 млн га</td>
+                            <td>84%</td>
+                            <td>1.2 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Нигерия</td>
+                            <td>0.6</td>
+                            <td>0.4 млн га</td>
+                            <td class="highlight">67%</td>
+                            <td>1.2 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Эфиопия</td>
+                            <td>0.1</td>
+                            <td>0.2 млн га</td>
+                            <td class="highlight">52%</td>
+                            <td>0.9 гга/чел</td>
+                        </tr>
+                        <tr>
+                            <td>Среднее по миру</td>
+                            <td>4.8</td>
+                            <td>10 млн га</td>
+                            <td>71%</td>
+                            <td>2.8 гга/чел</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Данные как основа для решений</h3>
+                <p>Точные статистические данные являются фундаментом для понимания глобальных проблем и разработки эффективных решений. Визуализация и анализ данных помогают выявлять закономерности, оценивать эффективность мер и определять приоритеты для международного сотрудничества.</p>
+            </div>
+        </section>
+    </main>
+    
+<script src="statistics.js"></script>
+</body>
+</html>

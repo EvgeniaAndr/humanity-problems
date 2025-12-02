@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальные проблемы человечества - Проблемы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="problems.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Фон -->
+    <div class="content-background"></div>
+    
+    <!-- Шапка -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-globe-americas"></i>
+            Глобальные проблемы
+        </a>
+        <nav class="main-nav">
+            <a href="problems.html" class="nav-link active">
+                <i class="fas fa-exclamation-triangle"></i>
+                Проблемы
+            </a>
+            <a href="solutions.html" class="nav-link">
+                <i class="fas fa-lightbulb"></i>
+                Решения
+            </a>
+            <a href="statistics.html" class="nav-link">
+                <i class="fas fa-chart-line"></i>
+                Статистика
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Кнопка назад -->
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        На главную
+    </a>
+    
+    <!-- Компактная навигация справа С ФИЛЬТРОМ -->
+    <nav class="compact-nav">
+        <a href="#geoecological" class="compact-nav-item active" data-tooltip="Геоэкологические проблемы">
+            <i class="fas fa-mountain"></i>
+        </a>
+        <a href="#socioeconomic" class="compact-nav-item" data-tooltip="Социально-экономические">
+            <i class="fas fa-users"></i>
+        </a>
+        
+        <!-- Кнопка фильтра с выпадающим меню -->
+        <div class="filter-dropdown">
+            <button class="compact-nav-item" id="filter-toggle" data-tooltip="Фильтр проблем">
+                <i class="fas fa-filter"></i>
+            </button>
+            
+            <!-- Выпадающее меню фильтра -->
+            <div class="filter-menu" id="filter-menu">
+                <h4><i class="fas fa-filter"></i> Фильтр по серьезности</h4>
+                <div class="filter-options">
+                    <div class="filter-option active" data-filter="all">
+                        <i class="fas fa-layer-group"></i>
+                        <span>Все проблемы</span>
+                    </div>
+                    <div class="filter-option" data-filter="critical">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Критические</span>
+                    </div>
+                    <div class="filter-option" data-filter="high">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Высокий риск</span>
+                    </div>
+                    <div class="filter-option" data-filter="medium">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Средний риск</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Индикатор прокрутки -->
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <div class="scroll-dot"></div>
+    </div>
+    
+    <!-- Основной контент -->
+    <main class="page-content">
+        <!-- Раздел 1: ГЕОЭКОЛОГИЧЕСКИЕ ПРОБЛЕМЫ -->
+        <section id="geoecological" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h1 class="section-main-title">ГЕОЭКОЛОГИЧЕСКИЕ ПРОБЛЕМЫ</h1>
+                <p class="section-subtitle">Проблемы географической оболочки Земли и антропогенное воздействие на природные системы</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Комплекс экологических проблем, возникающих в результате деятельности человека и затрагивающих все компоненты географической оболочки: литосферу, атмосферу, гидросферу и биосферу.</p>
+            </div>
+            
+            <div class="problems-category">
+                <h2 class="category-title">
+                    <i class="fas fa-layer-group"></i>
+                    Оболочки географической оболочки
+                </h2>
+                <div class="problems-container">
+                    
+                    <!-- Литосфера -->
+                    <div class="problem-card detailed-card" data-severity="critical">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Литосфера</h3>
+                                <span class="problem-tag tag-critical">Критично</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">33%</span>
+                                    <span class="stat-label">почв деградировали</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">12 млн га/год</span>
+                                    <span class="stat-label">опустынивание</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">3.2 млрд чел</span>
+                                    <span class="stat-label">затрагивает</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Деградация почв</strong> - потеря плодородного слоя вследствие эрозии</li>
+                                <li><strong>Опустынивание</strong> - расширение аридных территорий, потеря биоразнообразия</li>
+                                <li><strong>Химическое загрязнение</strong> - тяжелые металлы, пестициды, промышленные отходы</li>
+                                <li><strong>Горные выработки</strong> - нарушение целостности литосферы, образование карьеров</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Глобальные последствия:</h4>
+                                <p>Снижение продуктивности сельского хозяйства, утрата биоразнообразия, уменьшение пахотных площадей, рост продовольственной нестабильности.</p>
+                            </div>
+                            <div class="problem-regions">
+                                <h4><i class="fas fa-globe-americas"></i> Наиболее уязвимые регионы:</h4>
+                                <div class="tags">
+                                    <span class="tag">Африка (Сахель)</span>
+                                    <span class="tag">Центральная Азия</span>
+                                    <span class="tag">Северный Китай</span>
+                                    <span class="tag">Средиземноморье</span>
+                                    <span class="tag">Южная Америка</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Атмосфера -->
+                    <div class="problem-card detailed-card" data-severity="critical">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Атмосфера</h3>
+                                <span class="problem-tag tag-critical">Критично</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">+1.1°C</span>
+                                    <span class="stat-label">потепление</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">415 ppm</span>
+                                    <span class="stat-label">CO₂ в атмосфере</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">9 млн</span>
+                                    <span class="stat-label">смертей в год</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Изменение климата</strong> - глобальное потепление, экстремальные погодные явления</li>
+                                <li><strong>Разрушение озонового слоя</strong> - фреоны, галогены, УФ-излучение</li>
+                                <li><strong>Кислотные осадки</strong> - выбросы SO₂ и NOₓ, повреждение экосистем</li>
+                                <li><strong>Фотохимический смог</strong> - в мегаполисах, проблемы со здоровьем</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Глобальные последствия:</h4>
+                                <p>Таяние ледников и повышение уровня моря, учащение природных катастроф, заболевания дыхательной системы, угроза продовольственной безопасности.</p>
+                            </div>
+                            <div class="problem-regions">
+                                <h4><i class="fas fa-globe-americas"></i> Наиболее уязвимые регионы:</h4>
+                                <div class="tags">
+                                    <span class="tag">Арктика</span>
+                                    <span class="tag">Малые островные государства</span>
+                                    <span class="tag">Юго-Восточная Азия</span>
+                                    <span class="tag">Китай (индустриальные зоны)</span>
+                                    <span class="tag">Центральная Европа</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Гидросфера -->
+                    <div class="problem-card detailed-card" data-severity="high">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Гидросфера</h3>
+                                <span class="problem-tag tag-high">Высокая угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">8 млн т/год</span>
+                                    <span class="stat-label">пластика в океане</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2.2 млрд</span>
+                                    <span class="stat-label">без чистой воды</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">-30% pH</span>
+                                    <span class="stat-label">окисление океана</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Загрязнение океанов</strong> - пластик, нефтепродукты, тяжелые металлы</li>
+                                <li><strong>Истощение ресурсов</strong> - дефицит пресной воды, перерасход</li>
+                                <li><strong>Закисление океанов</strong> - поглощение CO₂, гибель кораллов</li>
+                                <li><strong>Эвтрофикация</strong> - цветение воды, мертвые зоны</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Глобальные последствия:</h4>
+                                <p>Гибель морских экосистем и биоразнообразия, дефицит питьевой воды, угроза прибрежным городам, нарушение рыболовства.</p>
+                            </div>
+                            <div class="problem-regions">
+                                <h4><i class="fas fa-globe-americas"></i> Наиболее уязвимые регионы:</h4>
+                                <div class="tags">
+                                    <span class="tag">Тихий океан (мусорное пятно)</span>
+                                    <span class="tag">Африка южнее Сахары</span>
+                                    <span class="tag">Ближний Восток</span>
+                                    <span class="tag">Индийский субконтинент</span>
+                                    <span class="tag">Коралловые рифы</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Биосфера -->
+                    <div class="problem-card detailed-card" data-severity="critical">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Биосфера</h3>
+                                <span class="problem-tag tag-critical">Критично</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">68%</span>
+                                    <span class="stat-label">сокращение популяций</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">10 млн га/год</span>
+                                    <span class="stat-label">вырубка лесов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">1 млн</span>
+                                    <span class="stat-label">видов под угрозой</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Сокращение биоразнообразия</strong> - вымирание видов, нарушение экосистем</li>
+                                <li><strong>Деградация экосистем</strong> - леса, кораллы, водно-болотные угодья</li>
+                                <li><strong>Инвазивные виды</strong> - нарушение природного баланса</li>
+                                <li><strong>Фрагментация сред</strong> - изоляция популяций, генетическое обеднение</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Глобальные последствия:</h4>
+                                <p>Нарушение пищевых цепей и экосистемных услуг, снижение устойчивости экосистем, утрата генетического разнообразия, экономические потери.</p>
+                            </div>
+                            <div class="problem-regions">
+                                <h4><i class="fas fa-globe-americas"></i> Наиболее уязвимые регионы:</h4>
+                                <div class="tags">
+                                    <span class="tag">Амазония</span>
+                                    <span class="tag">Юго-Восточная Азия</span>
+                                    <span class="tag">Коралловые рифы</span>
+                                    <span class="tag">Центральная Африка</span>
+                                    <span class="tag">Острова Океании</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Ключевой вывод по геоэкологическим проблемам</h3>
+                <p>Геоэкологические проблемы тесно взаимосвязаны и образуют комплексный кризис географической оболочки. Их решение требует системного подхода, международного сотрудничества и перехода к устойчивому развитию, учитывающему пределы восстановительных способностей природных систем.</p>
+            </div>
+        </section>
+        
+        <!-- Раздел 2: СОЦИАЛЬНО-ЭКОНОМИЧЕСКИЕ ПРОБЛЕМЫ -->
+        <section id="socioeconomic" class="page-section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2 class="section-main-title">СОЦИАЛЬНО-ЭКОНОМИЧЕСКИЕ ПРОБЛЕМЫ</h2>
+                <p class="section-subtitle">Проблемы взаимодействия общества и окружающей среды в контексте глобального развития</p>
+            </div>
+            
+            <div class="section-intro">
+                <p>Проблемы, возникающие в результате нерационального использования природных ресурсов, неравномерного социально-экономического развития и глобализационных процессов.</p>
+            </div>
+            
+            <div class="problems-category">
+                <h2 class="category-title">
+                    <i class="fas fa-chart-pie"></i>
+                    Основные направления социально-экономических проблем
+                </h2>
+                <div class="problems-container">
+                    
+                    <!-- Демографические проблемы -->
+                    <div class="problem-card detailed-card" data-severity="high">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Демографические проблемы</h3>
+                                <span class="problem-tag tag-high">Высокая угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">8 млрд</span>
+                                    <span class="stat-label">население мира</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">55%</span>
+                                    <span class="stat-label">городское население</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">10 млрд</span>
+                                    <span class="stat-label">прогноз к 2050</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Демографический взрыв</strong> - быстрый рост в развивающихся странах</li>
+                                <li><strong>Старение населения</strong> - в развитых странах, нагрузка на системы</li>
+                                <li><strong>Миграционные кризисы</strong> - климатические беженцы, конфликты</li>
+                                <li><strong>Урбанизация</strong> - перенаселение городов, экологические проблемы</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Социально-экономические последствия:</h4>
+                                <p>Давление на природные ресурсы, социальная напряженность, нагрузка на инфраструктуру, неравномерное развитие регионов, проблемы занятости.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Возможные пути решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Демографическая политика</span>
+                                    <span class="tag solution">Устойчивое развитие городов</span>
+                                    <span class="tag solution">Образование и планирование семьи</span>
+                                    <span class="tag solution">Международное сотрудничество</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Продовольственная проблема -->
+                    <div class="problem-card detailed-card" data-severity="high">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Продовольственная проблема</h3>
+                                <span class="problem-tag tag-high">Высокая угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">828 млн</span>
+                                    <span class="stat-label">голодающих людей</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">1.3 млрд т</span>
+                                    <span class="stat-label">потери продовольствия</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">149 млн</span>
+                                    <span class="stat-label">дети с отставанием</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Голод и недоедание</strong> - в развивающихся странах, детская смертность</li>
+                                <li><strong>Продовольственная безопасность</strong> - зависимость от импорта, цены</li>
+                                <li><strong>Расточительство</strong> - в развитых странах, нерациональное потребление</li>
+                                <li><strong>Монокультурное земледелие</strong> - уязвимость экосистем, эрозия почв</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Социально-экономические последствия:</h4>
+                                <p>Социальное неравенство, экономическая уязвимость, недоедание детей, политическая нестабильность, миграционные потоки.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Возможные пути решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Сельскохозяйственные инновации</span>
+                                    <span class="tag solution">Рациональное потребление</span>
+                                    <span class="tag solution">Локальное производство</span>
+                                    <span class="tag solution">Социальные программы</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ресурсные проблемы -->
+                    <div class="problem-card detailed-card" data-severity="medium">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Ресурсные проблемы</h3>
+                                <span class="problem-tag tag-medium">Средняя угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">50 лет</span>
+                                    <span class="stat-label">осталось меди</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">20 лет</span>
+                                    <span class="stat-label">осталось серебра</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">9%</span>
+                                    <span class="stat-label">переработка пластика</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Истощение ресурсов</strong> - невозобновляемые ископаемые, ограниченность</li>
+                                <li><strong>Зависимость от редких металлов</strong> - технологии ВИЭ, электроника</li>
+                                <li><strong>Конфликты за ресурсы</strong> - вода, нефть, руды, геополитика</li>
+                                <li><strong>Неэффективное использование</strong> - низкая переработка, линейная экономика</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Социально-экономические последствия:</h4>
+                                <p>Экономические кризисы, геополитические конфликты, рост цен, технологические ограничения, экологические проблемы добычи.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Возможные пути решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Циркулярная экономика</span>
+                                    <span class="tag solution">Рециклинг и повторное использование</span>
+                                    <span class="tag solution">Альтернативные материалы</span>
+                                    <span class="tag solution">Эффективность использования</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Энергетическая проблема -->
+                    <div class="problem-card detailed-card" data-severity="high">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Энергетическая проблема</h3>
+                                <span class="problem-tag tag-high">Высокая угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">80%</span>
+                                    <span class="stat-label">ископаемое топливо</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">770 млн</span>
+                                    <span class="stat-label">без электричества</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">35 Гт</span>
+                                    <span class="stat-label">CO₂ выбросы/год</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Зависимость от ископаемого топлива</strong> - углеродные выбросы, изменение климата</li>
+                                <li><strong>Неравномерный доступ</strong> - энергетическая бедность, развитие</li>
+                                <li><strong>Нестабильность ВИЭ</strong> - солнце, ветер, проблемы хранения</li>
+                                <li><strong>Энергетическая безопасность</strong> - геополитические риски, поставки</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Социально-экономические последствия:</h4>
+                                <p>Изменение климата, экономическое неравенство, политическая зависимость, экологические катастрофы, ограничения развития.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Возможные пути решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Возобновляемая энергетика</span>
+                                    <span class="tag solution">Энергоэффективность</span>
+                                    <span class="tag solution">Умные сети</span>
+                                    <span class="tag solution">Технологии хранения</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Геополитические проблемы -->
+                    <div class="problem-card detailed-card" data-severity="medium">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-globe-europe"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Геополитические проблемы</h3>
+                                <span class="problem-tag tag-medium">Средняя угроза</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">145</span>
+                                    <span class="stat-label">водных конфликтов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">200 млн</span>
+                                    <span class="stat-label">климатических мигрантов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">1% : 50%</span>
+                                    <span class="stat-label">неравенство доходов</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Территориальные споры</strong> - ресурсные конфликты, морские границы</li>
+                                <li><strong>Водные конфликты</strong> - трансграничные реки, дефицит воды</li>
+                                <li><strong>Климатическая миграция</strong> - экологические беженцы, социальная напряженность</li>
+                                <li><strong>Глобальное неравенство</strong> - север-юг, цифровой разрыв</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Социально-экономические последствия:</h4>
+                                <p>Международная напряженность, военные конфликты, гуманитарные кризисы, нарушение прав человека, нестабильность рынков.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Возможные пути решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Международные соглашения</span>
+                                    <span class="tag solution">Дипломатия и переговоры</span>
+                                    <span class="tag solution">Справедливое распределение</span>
+                                    <span class="tag solution">Глобальное управление</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Устойчивое развитие -->
+                    <div class="problem-card detailed-card" data-severity="critical">
+                        <div class="problem-card-header">
+                            <div class="problem-icon">
+                                <i class="fas fa-recycle"></i>
+                            </div>
+                            <div class="problem-title">
+                                <h3>Устойчивое развитие</h3>
+                                <span class="problem-tag tag-critical">Критично</span>
+                            </div>
+                        </div>
+                        <div class="problem-content">
+                            <div class="problem-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">1.7</span>
+                                    <span class="stat-label">планет потребления</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">90%</span>
+                                    <span class="stat-label">отходы не перерабатываются</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2030</span>
+                                    <span class="stat-label">сроки ЦУР ООН</span>
+                                </div>
+                            </div>
+                            <ul class="problem-list">
+                                <li><strong>Неустойчивое потребление</strong> - превышение возможностей планеты</li>
+                                <li><strong>Линейная экономика</strong> - ресурсы-отходы, загрязнение</li>
+                                <li><strong>Потеря экосистемных услуг</strong> - опыление, очистка воды, регулирование климата</li>
+                                <li><strong>Климатическая несправедливость</strong> - неравная ответственность, уязвимость</li>
+                            </ul>
+                            <div class="problem-impact">
+                                <h4><i class="fas fa-exclamation-circle"></i> Системные последствия:</h4>
+                                <p>Невозможность восстановления экосистем, социальные конфликты, экономические потери, утрата качества жизни, угроза будущим поколениям.</p>
+                            </div>
+                            <div class="problem-solutions">
+                                <h4><i class="fas fa-lightbulb"></i> Стратегические решения:</h4>
+                                <div class="tags">
+                                    <span class="tag solution">Цели устойчивого развития ООН</span>
+                                    <span class="tag solution">Циркулярная экономика</span>
+                                    <span class="tag solution">Зеленые технологии</span>
+                                    <span class="tag solution">Экологическое сознание</span>
+                                    <span class="tag solution">Глобальное партнерство</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-conclusion">
+                <h3><i class="fas fa-lightbulb"></i> Ключевой вывод по социально-экономическим проблемам</h3>
+                <p>Социально-экономические проблемы требуют комплексного подхода, балансирующего между экономическим развитием, социальной справедливостью и экологической устойчивостью. Их решение лежит в плоскости международного сотрудничества, инновационных технологий и изменения моделей потребления.</p>
+            </div>
+        </section>
+    </main>
+    
+    <script src="problems.js"></script>
+</body>
+</html>
