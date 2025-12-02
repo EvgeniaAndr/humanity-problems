@@ -708,3 +708,235 @@ body.page-transition {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
+/* Стили для модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    padding: 20px;
+}
+
+.modal-container {
+    background: linear-gradient(135deg, rgba(16, 18, 54, 0.95), rgba(8, 10, 36, 0.98));
+    border-radius: 25px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid rgba(79, 172, 254, 0.4);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(79, 172, 254, 0.1) inset;
+    position: relative;
+    transform: translateY(30px);
+    animation: slideUp 0.4s ease forwards 0.1s;
+    scrollbar-width: thin;
+    scrollbar-color: #4facfe rgba(16, 18, 54, 0.5);
+}
+
+.modal-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-container::-webkit-scrollbar-track {
+    background: rgba(16, 18, 54, 0.5);
+    border-radius: 4px;
+}
+
+.modal-container::-webkit-scrollbar-thumb {
+    background: #4facfe;
+    border-radius: 4px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(79, 172, 254, 0.1);
+    border: 1px solid rgba(79, 172, 254, 0.3);
+    color: #4facfe;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    z-index: 10001;
+}
+
+.close-modal:hover {
+    background: rgba(79, 172, 254, 0.3);
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.modal-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #4facfe, transparent);
+}
+
+.modal-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-subtitle {
+    color: #a0d2ff;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.modal-content {
+    color: #b0d5ff;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.modal-section {
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #4facfe;
+}
+
+.modal-section h3 {
+    color: #4facfe;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+.modal-section h3 i {
+    font-size: 1.2rem;
+}
+
+.modal-section p {
+    margin-bottom: 10px;
+}
+
+.modal-section ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.modal-section li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.modal-section li::before {
+    content: '•';
+    color: #4facfe;
+    position: absolute;
+    left: 0;
+}
+
+.modal-footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(79, 172, 254, 0.2);
+    color: #a0d2ff;
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-container {
+        padding: 30px 25px;
+        max-height: 85vh;
+    }
+    
+    .modal-title {
+        font-size: 1.8rem;
+    }
+    
+    .modal-subtitle {
+        font-size: 1rem;
+    }
+    
+    .modal-content {
+        font-size: 1rem;
+    }
+    
+    .modal-section {
+        padding: 15px;
+    }
+    
+    .close-modal {
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-overlay {
+        padding: 15px;
+    }
+    
+    .modal-container {
+        padding: 25px 20px;
+        max-height: 90vh;
+    }
+    
+    .modal-title {
+        font-size: 1.6rem;
+    }
+    
+    .modal-subtitle {
+        font-size: 0.9rem;
+    }
+}
